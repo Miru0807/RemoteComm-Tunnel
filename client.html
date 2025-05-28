@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Tunnel Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>WebSocket Tunnel Client</h1>
+    <select id="service">
+        <option value="time">Time Service</option>
+        <option value="chat">Chat Service</option>
+    </select>
+    <button onclick="connectService()">Connect</button>
+    <div id="output"></div>
+    <input type="text" id="message" placeholder="Type a message" disabled>
+    <button onclick="sendMessage()" disabled>Send</button>
+    <ul id="messages"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
